@@ -1,0 +1,24 @@
+package br.com.senac.projeto_spring_aula.todolist.model;
+
+
+import jakarta.persistence.*;
+
+import javax.naming.Name;
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = "lista")
+public class ListaEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Column(nullable = false)
+    private String descricao;
+
+    @Column(name = "data_conclusao")
+    private LocalDateTime dataConclusao;
+
+    private String status;
+}

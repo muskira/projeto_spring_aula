@@ -1,13 +1,11 @@
 package br.com.senac.projeto_spring_aula.todolist.model;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.naming.Name;
 import java.time.LocalDateTime;
 
 @Entity
@@ -26,6 +24,7 @@ public class ListaEntity {
     @Column(name = "data_conclusao")
     private LocalDateTime dataConclusao;
 
-    private String status;
+    @Enumerated(EnumType.STRING)
+    private ListaStatus status;
 
 }

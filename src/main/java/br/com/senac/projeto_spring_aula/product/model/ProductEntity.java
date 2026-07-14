@@ -1,4 +1,4 @@
-package br.com.senac.projeto_spring_aula.product;
+package br.com.senac.projeto_spring_aula.product.model;
 
 
 import jakarta.persistence.*;
@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 
-public class productEntity {
+public class ProductEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -22,10 +22,10 @@ public class productEntity {
     @Column(nullable = false)
     private BigDecimal preco;
     @Column(nullable = false)
-    private Integer quantidadeEstoque;
+    private Long quantidadeEstoque;
 
     @Enumerated(EnumType.STRING)
-    private productStatus status;
+    private ProductStatus status;
 
 
 

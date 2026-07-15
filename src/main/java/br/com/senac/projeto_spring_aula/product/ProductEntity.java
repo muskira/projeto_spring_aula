@@ -1,4 +1,4 @@
-package br.com.senac.projeto_spring_aula.product.model;
+package br.com.senac.projeto_spring_aula.product;
 
 
 import jakarta.persistence.*;
@@ -8,7 +8,7 @@ import lombok.Setter;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name ="/product")
+@Table(name ="product")
 @Getter
 @Setter
 

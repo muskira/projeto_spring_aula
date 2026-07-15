@@ -1,9 +1,5 @@
 package br.com.senac.projeto_spring_aula.product;
 
-import br.com.senac.projeto_spring_aula.livraria.LivroPostDto;
-import br.com.senac.projeto_spring_aula.product.model.ProductEntity;
-import br.com.senac.projeto_spring_aula.product.model.ProductPostDto;
-import br.com.senac.projeto_spring_aula.product.model.ProductStatus;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
